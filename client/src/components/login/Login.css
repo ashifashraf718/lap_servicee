@@ -1,0 +1,43 @@
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+}
+.login {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+.login input {
+  width: 30vh;
+  font-size: 16px;
+  background-color: gray;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+.btn {
+  padding: 10px;
+  background-color: gray;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+::placeholder {
+  color: black;
+  opacity: 1; /* Firefox */
+}
+.link {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
