@@ -4,11 +4,11 @@ import { signupApi } from "../../Api";
 import { Link } from "react-router-dom";
 
 const Signup = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [age, setAge] = useState("");
-  const [place, setPlace] = useState("");
-  const [password, setPassword] = useState("");
+  const [name, setName] = useState();
+  const [email, setEmail] = useState();
+  const [age, setAge] = useState();
+  const [place, setPlace] = useState();
+  const [password, setPassword] = useState();
 
   const submit = () => {
     signupApi({ name, email, place, age, password });
@@ -17,8 +17,8 @@ const Signup = () => {
   return (
     <div>
       <div className="main">
-        <h1>SIGNUP</h1>
         <div className="signup">
+        <h1>SIGNUP</h1>
           <input
             type="text"
             placeholder="Name"

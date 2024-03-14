@@ -13,9 +13,9 @@ const Login = () => {
     loginApi({ email, password }, dispatch);
   };
   return (
-    <div className="main">
+    <div className="login">
+      <div className="form">
       <h1>LOGIN</h1>
-      <div className="login">
         <div>
           <input
             type="text"

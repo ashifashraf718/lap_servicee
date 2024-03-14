@@ -1,0 +1,9 @@
+.home{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+.nav{
+    width: 100%;
+    background-color: gray;
+}

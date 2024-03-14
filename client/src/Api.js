@@ -24,3 +24,14 @@ export const loginApi = async (data, dispatch) => {
     console.log(error.message);
   }
 };
+
+export const getPersonInfo=async(id)=>{
+  console.log("id",id);
+  try {
+    const personalInfo=await axios.get(`http://localhost:5000/api/getById/${id}`)
+    console.log("user :",personalInfo.data);
+    return personalInfo
+  } catch (error) {
+    console.log(error.message);
+  }
+}
